@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>교구개발실 안전수칙</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<style type="text/css">
+			*{margin-top:0; margin-left:0; margin-right:0;  overflow-x:hidden; 
+				overflow-y:hidden;}
+
+		#black{width:100%; height:100%; position:absolute; z-index:-1000;}
+/*
+		#panel {width:250px; height:250px; position:absolute; left:10%; top:10%;}
+		#drill {width:250px; height:250px; position:absolute; left:25%; top:10%;}
+		#skc {width:250px; height:250px; position:absolute; left:40%; top:10%;}
+		#tst {width:250px; height:250px; position:absolute; left:55%; top:10%;}
+		#cutting {width:250px; height:250px; position:absolute; left:70%; top:10%;}
+		#beld {width:250px; height:250px; position:absolute; left:17%; top:40%;}
+		#tablesaw {width:250px; height:250px; position:absolute; left:32%; top:40%;}
+		#fdfdf {width:250px; height:250px; position:absolute; left:47%; top:40%;}
+		#unimet {width:250px; height:250px; position:absolute; left:62%; top:40%;}
+*/
+
+		#panel {width:250px; height:250px; position:absolute; left:14%; top:20%;  transition:all 1s;}
+		#drill {width:250px; height:250px; position:absolute; left:29%; top:20%;cursor:pointer; transition:all 1s;}
+		#skc {width:250px; height:250px; position:absolute; left:44%; top:20%;cursor:pointer;transition:all 1s;}
+		#tst {width:250px; height:250px; position:absolute; left:59%; top:20%;cursor:pointer;transition:all 1s;}
+		#cutting {width:250px; height:250px; position:absolute; left:74%; top:20%;cursor:pointer;transition:all 1s;}
+		#beld {width:250px; height:250px; position:absolute; left:22%; top:50%;cursor:pointer;transition:all 1s;}
+		#tablesaw {width:250px; height:250px; position:absolute; left:37%; top:50%;cursor:pointer;transition:all 1s;}
+		#fdfdf {width:250px; height:250px; position:absolute; left:52%; top:50%;cursor:pointer;transition:all 1s;}
+		#unimet {width:250px; height:250px; position:absolute; left:67%; top:50%;cursor:pointer;transition:all 1s;}
+		#angeon{width:345px;  position: absolute; top: 10%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:40px; z-index: 1000;    transition:all 1s; cursor:pointer;}
+
+    	#caus {width:100px; height:100px; position:absolute; left:34%; top:5%;}
+    	#caust {width:100px; height:100px; position:absolute; left:60%; top:5%;}
+
+    	#t2{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+    	#t3{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+    	#t4{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+    	#t5{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+    	#t6{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+    	#t7{width:0px;  position: absolute; top: 55%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:18px; z-index: 3;    transition:all 2s; }
+
+    	#t8{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+    	#t9{width:0px;  position: absolute; top: 50%; left: 50%; margin-right: -50%;
+    	transform: translate(-50%, -50%); color:white; font-size:20px; z-index: 3;    transition:all 2s; }
+
+
+    	html{font-family: 'Noto Sans KR', sans-serif;}
+
+	</style>
+</head>
+<body>
+
+
+	<img id="panel" src="교구개발실 푯말.jpg">
+	<img id="drill" src="탁상드릴.jpg">
+	<img id="skc" src="스카시톱.jpg">
+	<img id="tst" src="탁상톱.jpg">
+	<img id="cutting" src="razer.jpg">
+	<img id="beld" src="벨드센더기.jpg">
+	<img id="tablesaw" src="테이블소.jpg">
+	<img id="fdfdf" src ="fdfdf.jpg">
+	<img id="unimet" src ="유니멧.jpg">
+	<img id="black" src ="전경.jpg">
+	<img id="caus" src ="causion.png">
+	<img id="caust" src ="causion.png">
+
+
+	<div id= "angeon">교구개발실 안전수칙</div>
+
+	
+	<div id= "t2">{탁상드릴 안전수칙 9가지}
+<p>
+	<p>
+1.장갑을 착용한채로 사용하지말것.<br>
+2.보안경, 마스크 착용 필수<br>
+3.칩 부산 주의<br>
+3.확신이없는 작업은피할것.<br>
+4.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+5.드릴팁을 교체하거나 수리할때는 전원 플러그를 빼고 할 것.<br>
+6.작업 반경 내 바닥을  걸리적거리는 것 없이 깨끗히 치울것.<br>
+7.소매가 길게 늘어지는 옷이나 긴 장신구등을 하지 말것.<br>
+8.드릴팁 길이를 넘어가는 작업물은 가공 하지 말것.<br>
+9.관계자외 분해결합 금지. <br>
+10.교육 받지 않은 인원 사용금지.</div>
+
+<div id= "t3">{스카시톱 안전수칙 10가지}<p>
+	<p>
+
+1.장갑을 착용한채로 사용하지말것.<br>
+2.보안경, 마스크착용 필수<br>
+3.확신이없는 작업은피할것.<br>
+4.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+5.톱날을 교체하거나 수리할때는 전원 플러그를 빼고 할 것.<br>
+6.정반을 작업물이 잘 미끄러지도록 부드럽게 관리할것.<br>
+7.작업 반경 내 바닥을  걸리적거리는 것 없이 깨끗히 치울것.<br>
+8.소매가 길게 늘어지는 옷이나 긴 장신구등을 하지 말것.<br>
+9. 관계자외 분해결합 금지.<br>
+10.교육 받지 않은 인원 사용금지.</div>
+
+<div id= "t4">{탁상톱 안전수칙 7가지}
+<p><p>
+1.보안경, 마스크 착용 필수<br>
+2.확신이 없는 작업은피할것.<br>
+3.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+4.작업 반경 내 바닥을  걸리적거리는 것 없이 깨끗히 치울것.<br>
+5.관계자외 분해결합 금지. <br>
+6.교육 받지 않은 인원 사용금지.<br>
+7.작업물이 잘 고정되도록 바이스 사용 권장<br></div>
+
+<div id= "t5">{레이저 컷팅기 안전수칙 12가지}
+<p><p>
+1.우드락, 스티로폼, 필름지 사용금지.<br>
+2.저장소,파일위치 임의변동 금지.<br>
+3.확신이 없는 작업은피할것.<br>
+4.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+5.환풍기 가동 필수.<br>
+6.작업 반경 내 바닥을  걸리적거리는 것 없이 깨끗히 치울것.<br>
+7.높이 조절 키 분실 금지.<br>
+8.작업시작후 자리비움 금지.<br>
+9.관계자외 분해결합 금지. <br>
+10.교육 받지 않은 인원 사용금지.<br>
+11.15T이상의 작업물 커팅금지.<br>
+12. 사용후 주변정리 필수.<br>
+<p>
+교육자: 강반석 01055935640 </div>
+
+<div id= "t6"> {벨트샌더기 안전수칙 12가지}
+<p><p>
+1.장갑을 착용한채로 사용하지말것.<br>
+2.보안경, 마스크 착용 필수<br>
+3.칩 부산 주의<br>
+3.확신이 없는 작업은피할것.<br>
+4.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+5.사포를 교체하거나 수리할때는 전원 플러그를 빼고 할 것.<br>
+6.작업 반경 내 바닥을  걸리적거리는 것 없이 깨끗히 치울것.<br>
+7.소매가 길게 늘어지는 옷이나 긴 장신구등을 하지 말것.<br>
+8.플라스틱,아크릴 가공금지.<br>
+9.관계자외 분해결합 금지. <br>
+10.교육 받지 않은 인원 사용금지.<br>
+11.1~2cm작업물 가공금지.<br>
+12. 벨트 샌딩 사용시 샌딩가드 필수.</div>
+
+<div id= "t7"> {테이블 쏘 안전수칙 12가지}<p><p>
+
+1. 장갑을 찐채로 테이블쏘를 사용하지 말것.<br>
+2. 작업 변경 내 바닥을 걸리적거리는 것 없이 깨끗이 치울 것.<br>
+3. 보안경과 귀마개 착용<br>
+4. 소매가 길게 늘어지는 옷이나 넥타이 긴 장신구등을 하지 말것<br>
+5. 안정적으로 서서 작업하고 미끄럽지 않은 신발을 신을 것<br>
+6. 확신이 없는 작업은 피할 것<br>
+7. 15cm이하의 너비를 가진 부재를 자를 때는 푸쉬스틱을 사용할 것<br>
+8. 짧은 부재를 자를 때는 스탑블럭을 사용할 것<br>
+9. 톱날과 일직선상에 서 있지 말것<br>
+10. 톱날이 돌아가고 있을 때는 절대 톱날 뒤쪽으로 손을 가져가지 말것<br>
+11. 톱날이 교체하거나 수리할 때는 전원 플러그를 빼고 할 것<br>
+12. 테이블쏘를 세팅하기 전에 반드시 톱날이 멈췄는지 확인할 것<br>
+13. 테이블쏘를 켜기 전 톱날이 잘 움직이는 지 확인할 것<br>
+14. 정반을 작업물이 잘 미끄러지도록 부드럽게 관리할 것<br>
+15. 립펜스와 톱날이 평행하도록 할것(톱날에 작업물이 끼지 않아 킥백을 방지함)<br>
+16. 제로 클리어런스 인써트를 사용할 것<br>
+17. 블레이드 인써트 없이 절대 테이블쏘를 켜지 말것<br>
+18. 프리핸드컷을 하지 말것<br>
+19. 블레이드 가드, 라이빌나이프, 폴을 반드시 장착할 것<br>
+20. 작업물이 톱날을 완전히 지나갈 때까지 잡고 있을 것<br>
+21. 자르던 부재가 들리거나 정반에서 뒤틀려서 손에서 놓치면 테이블쏘 전원을 끌것<br>
+22. 자르기 전에 나무를 살펴볼 것(못이나 돌이 박신 곳이나 옹이는 없는지)<br>
+23. 립펜스와 마이터게이지를 함께 사용하지 말것<br>
+24. 테이블쏘가 켜져 있을 때는 펜스를 움직이지 말것</div>
+
+<div id= "t8"> {유니멧 안전수칙 10가지}<p><p>
+
+1.장갑을 착용한채로 사용하지말것.<br>
+2.보안경, 마스크 착용 필수<br>
+3.칩 부산 주의<br>
+3.확신이 없는 작업은피할것.<br>
+4.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+5.교육 받지 않은 인원 사용금지.<br>
+6.소매가 길게 늘어지는 옷이나 긴 장신구등을 하지 말것.<br>
+7. 사용후 주변정리 필수.<br>
+8.관계자외 분해결합 금지.<br>
+9.정반을 작업물이 잘 미끄러지도록 부드럽게 관리할것.<br>
+10. 사용후 주변정리 필수.</div>
+
+<div id= "t9"> {유니멧 안전수칙 10가지}<p><p>
+
+1.장갑을 착용한채로 사용하지말것.<br>
+2.보안경, 마스크 착용 필수<br>
+3.칩 부산 주의<br>
+3.확신이 없는 작업은피할것.<br>
+4.안정적으로 서서 미끄럽지 않은 신발을 신을것.<br>
+5.교육 받지 않은 인원 사용금지.<br>
+6.소매가 길게 늘어지는 옷이나 긴 장신구등을 하지 말것.<br>
+7. 사용후 주변정리 필수.<br>
+8.관계자외 분해결합 금지.<br>
+9.정반을 작업물이 잘 미끄러지도록 부드럽게 관리할것.<br>
+10. 사용후 주변정리 필수.</div>
+
+
+<script type="text/javascript">
+	
+
+	drill.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="400px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+			t8.style.width="0px"
+		t9.style.width="0px"
+	}
+
+	skc.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="400px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+			t8.style.width="0px"
+		t9.style.width="0px"
+	}
+
+	tst.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="400px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+			t8.style.width="0px"
+		t9.style.width="0px"
+	}
+
+	cutting.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="400px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+			t8.style.width="0px"
+		t9.style.width="0px"
+	}
+
+	beld.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="400px"
+		t7.style.width="0px"
+			t8.style.width="0px"
+		t9.style.width="0px"
+	}
+
+	tablesaw.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="630px"
+			t8.style.width="0px"
+		t9.style.width="0px"
+	}
+
+	fdfdf.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+			t8.style.width="400px"
+		t9.style.width="0px"
+	}
+
+	unimet.onclick=function(){
+		panel.style.opacity="0.2"
+		drill.style.opacity="0.2"
+		skc.style.opacity="0.2"
+		tst.style.opacity="0.2"
+		cutting.style.opacity="0.2"
+		beld.style.opacity="0.2"
+		tablesaw.style.opacity="0.2"
+		fdfdf.style.opacity="0.2"
+		unimet.style.opacity="0.2"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+			t8.style.width="0px"
+		t9.style.width="400px"
+	}
+
+	angeon.onclick=function(){
+		panel.style.opacity="1"
+		drill.style.opacity="1"
+		skc.style.opacity="1"
+		tst.style.opacity="1"
+		cutting.style.opacity="1"
+		beld.style.opacity="1"
+		tablesaw.style.opacity="1"
+		fdfdf.style.opacity="1"
+		unimet.style.opacity="1"
+		t2.style.width="0px"
+		t3.style.width="0px"
+		t4.style.width="0px"
+		t5.style.width="0px"
+		t6.style.width="0px"
+		t7.style.width="0px"
+		t8.style.width="0px"
+		t9.style.width="0px"
+	}
+</script>>
+
+</body>
+
+
+</html>
